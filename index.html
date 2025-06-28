@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Display</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Minecraft', sans-serif;
+            background-color: #f0f0f0;
+        }
+        .number {
+            font-size: 5rem;
+            padding: 20px;
+        }
+        .left {
+            color: red;
+        }
+        .left {
+            background-color: rgba(255, 0, 0, 0.1);
+            color: #c73030;
+            width: 50vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+        .right {
+            background-color: rgba(0, 0, 255, 0.1);
+            color: #3864b0;
+            width: 50vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+        .top-middle {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #fff;
+            padding: 10px 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            font-size: 2rem;
+            font-family: 'Minecraft', sans-serif;
+            z-index: 1000;
+        }
+        .bottom-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            padding: 10px 30px;
+            box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
+            font-family: 'Minecraft', sans-serif;
+            font-size: 1.2rem;
+            z-index: 1000;
+        }
+        .bottom-bar .date {
+            color: #444;
+        }
+        .bottom-bar .logo {
+            height: 32px;
+            vertical-align: middle;
+            margin-right: 30px; /*left shift*/
+        }
+    </style>
+    <link href="https://fonts.cdnfonts.com/css/minecraft-3" rel="stylesheet">
+</head>
+<body>
+    <div class="top-middle">Current Score</div>
+    <div class="number left">A: 123</div>
+    <div class="number right">B: 123</div>
+    <div class="bottom-bar">
+        <span class="date">Date: 9999-99-99</span>
+        <img src="logo/logo.png" alt="Logo" class="logo">
+</body>
+</html>
